@@ -1,19 +1,22 @@
-/* Podstawowy reset i ogólne style */
+/* Resetowanie marginesów i paddingów */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Tło strony i czcionka */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    background-color: #f8f9fa;
     color: #333;
+    padding-top: 80px; /* Dodanie przestrzeni nad sekcją */
 }
 
+/* Nagłówek */
 header {
-    background-color: #2c3e50;
+    background-color: #4e73df; /* Elegancki odcień niebieskiego */
     color: white;
     padding: 20px;
     text-align: center;
@@ -21,46 +24,87 @@ header {
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Stylowanie tytułu w nagłówku */
 header h1 {
     margin: 0;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
+/* Nawigacja */
 nav ul {
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 15px;
     list-style: none;
 }
 
 nav ul li {
-    margin: 0 20px;
+    margin: 0 25px;
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 0;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: #ffbb33; /* Złoty kolor przy najechaniu */
+    transform: scale(1.1);
 }
 
-/* Ukrywanie sekcji i ich wyświetlanie */
+/* Sekcje */
 .section {
     display: none;
-    padding: 20px;
-    margin-top: 120px; /* Dystans od nagłówka */
+    padding: 40px;
+    margin-top: 100px; /* Dystans od nagłówka */
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
 }
 
 #about {
-    display: block; /* Sekcja O firmie widoczna na starcie */
+    display: block;
 }
 
+h2 {
+    font-size: 2rem;
+    color: #4e73df;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* Linki w sekcjach */
+a {
+    color: #4e73df;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #ffbb33; /* Złoty kolor przy najechaniu */
+}
+
+/* Stopka */
 footer {
     text-align: center;
     padding: 20px;
@@ -69,8 +113,52 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer p {
     margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Stylowanie przycisków w sekcjach */
+button {
+    background-color: #4e73df;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c3e50;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .section {
+        padding: 20px;
+        margin-top: 120px;
+    }
+
+    footer {
+        padding: 15px;
+    }
 }
