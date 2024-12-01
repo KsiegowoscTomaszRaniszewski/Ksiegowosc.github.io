@@ -4,69 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Usługi księgowe dla firm – kompleksowa obsługa KPiR, VAT i inne usługi księgowe.">
-    <title>Księgowość Tomasz Raniszewski</title>
+    <title>Usługi Księgowe – Tomasz Raniszewski</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#about">O firmie</a></li>
-                <li><a href="#services">Usługi</a></li>
-                <li><a href="#contact">Kontakt</a></li>
+                <li><a href="#" onclick="showSection('about')">O firmie</a></li>
+                <li><a href="#" onclick="showSection('services')">Usługi</a></li>
+                <li><a href="#" onclick="showSection('contact')">Kontakt</a></li>
             </ul>
         </nav>
-        <h1>Księgowość Tomasz Raniszewski</h1>
+        <h1>Usługi Księgowe – Tomasz Raniszewski</h1>
     </header>
 
-    <main>
-        <section id="about">
-            <h2>O firmie</h2>
-            <p>Witam na stronie mojej firmy. Nazywam się Tomasz Raniszewski i oferuję kompleksowe usługi księgowe dla małych i średnich firm. Specjalizuję się w prowadzeniu KPiR, ryczałcie ewidencjonowanym, obsłudze deklaracji podatkowych, JPK, VAT, kadrach i płacach oraz wielu innych obszarach związanych z księgowością i rozliczeniami podatkowymi.</p>
-            <p>Moja oferta skierowana jest do przedsiębiorców, którzy potrzebują rzetelnej i fachowej obsługi księgowej. Dzięki doświadczeniu i nowoczesnym narzędziom, zapewniam pełną obsługę księgową w zakresie:</p>
-            <ul>
-                <li>Księgowość, KPiR, ryczałt</li>
-                <li>Obsługa VAT, JPK, PIT, ZUS</li>
-                <li>Fakturowanie, OCR, płatności</li>
-                <li>Kadry i płace, PPK, deklaracje roczne</li>
-                <li>Obsługa JPK_V7, KSeF, e-deklaracje</li>
-                <li>Przypomnienia o terminach podatkowych</li>
-                <li>Raporty, analizy, ewidencja środków trwałych</li>
-            </ul>
-        </section>
+    <section id="about" class="section">
+        <h2>O firmie</h2>
+        <p>Witam na stronie mojej firmy. Nazywam się Tomasz Raniszewski i oferuję kompleksowe usługi księgowe dla małych i średnich firm. Specjalizuję się w prowadzeniu KPiR, ryczałcie ewidencjonowanym, obsłudze deklaracji podatkowych, JPK, VAT, kadrach i płacach oraz wielu innych obszarach związanych z księgowością i rozliczeniami podatkowymi.</p>
+        <p>Moja oferta skierowana jest do przedsiębiorców, którzy potrzebują rzetelnej i fachowej obsługi księgowej. Dzięki doświadczeniu i nowoczesnym narzędziom, zapewniam pełną obsługę księgową w zakresie:</p>
+        <ul>
+            <li>Księgowość, KPiR, ryczałt</li>
+            <li>Obsługa VAT, JPK, PIT, ZUS</li>
+            <li>Fakturowanie, OCR, płatności</li>
+            <li>Kadry i płace, PPK, deklaracje roczne</li>
+            <li>Obsługa JPK_V7, KSeF, e-deklaracje</li>
+            <li>Przypomnienia o terminach podatkowych</li>
+            <li>Raporty, analizy, ewidencja środków trwałych</li>
+        </ul>   
+    </section>
 
-        <section id="services">
-            <h2>Usługi</h2>
-            <p>Oferuję pełen zakres usług księgowych, w tym:</p>
-            <ul>
-                <li><strong>KPiR:</strong> Prowadzenie księgi przychodów i rozchodów dla małych firm.</li>
-                <li><strong>Ryczałt Ewidencjonowany:</strong> Obsługa podatku dochodowego w formie ryczałtu.</li>
-                <li><strong>Zaliczki na podatek PIT:</strong> Miesięczne i kwartalne zaliczki PIT-5/PIT-5L.</li>
-                <li><strong>Deklaracje roczne PIT:</strong> PIT-36, PIT-36L, PIT-28.</li>
-                <li><strong>Obsługa JPK_V7:</strong> W tym wysyłka seryjna, rejestry sprzedaży i zakupu VAT.</li>
-                <li><strong>Rejestr sprzedaży VAT:</strong> Ewidencja sprzedaży VAT oraz deklaracje JPK_V7.</li>
-                <li><strong>Obsługa JPK_PKPiR:</strong> W tym wysyłka plików z KPiR.</li>
-                <li><strong>Deklaracje ZUS:</strong> Wysyłka deklaracji ZUS i rozliczenia pracowników.</li>
-                <li><strong>Amortyzacja:</strong> Ewidencja i odpisy amortyzacyjne dla środków trwałych.</li>
-                <li><strong>Fakturowanie:</strong> Wystawianie faktur, OCR, integracja z KSeF.</li>
-                <li><strong>Raporty:</strong> Generowanie raportów, przypomnienia o terminach podatkowych.</li>
-                <li><strong>Obsługa kadrowa:</strong> Rejestracja pracowników, umowy, listy płac.</li>
-            </ul>
-        </section>
+    <section id="services" class="section">
+        <h2>Usługi</h2>
+        <p>Oferuję pełen zakres usług księgowych, w tym:</p>
+        <ul>
+            <li><strong>KPiR:</strong> Prowadzenie księgi przychodów i rozchodów dla małych firm.</li>
+            <li><strong>Ryczałt Ewidencjonowany:</strong> Obsługa podatku dochodowego w formie ryczałtu.</li>
+            <li><strong>Zaliczki na podatek PIT:</strong> Miesięczne i kwartalne zaliczki PIT-5/PIT-5L.</li>
+            <li><strong>Deklaracje roczne PIT:</strong> PIT-36, PIT-36L, PIT-28.</li>
+            <li><strong>Obsługa JPK_V7:</strong> W tym wysyłka seryjna, rejestry sprzedaży i zakupu VAT.</li>
+            <li><strong>Rejestr sprzedaży VAT:</strong> Ewidencja sprzedaży VAT oraz deklaracje JPK_V7.</li>
+            <li><strong>Obsługa JPK_PKPiR:</strong> W tym wysyłka plików z KPiR.</li>
+            <li><strong>Deklaracje ZUS:</strong> Wysyłka deklaracji ZUS i rozliczenia pracowników.</li>
+            <li><strong>Amortyzacja:</strong> Ewidencja i odpisy amortyzacyjne dla środków trwałych.</li>
+            <li><strong>Fakturowanie:</strong> Wystawianie faktur, OCR, integracja z KSeF.</li>
+            <li><strong>Raporty:</strong> Generowanie raportów, przypomnienia o terminach podatkowych.</li>
+            <li><strong>Obsługa kadrowa:</strong> Rejestracja pracowników, umowy, listy płac.</li>
+        </ul>
+    </section>
 
-        <section id="contact">
-            <h2>Kontakt</h2>
-            <p>Masz pytania lub chcesz umówić się na spotkanie? Skontaktuj się ze mną:</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:ksiegowosc.tomasz.raniszewski@gmail.com">ksiegowosc.tomasz.raniszewski@gmail.com</a></li>
-                <li><strong>Telefon:</strong> +48 512 612 217</li>
-                <li><strong>Adres:</strong> ul. Księgowa 12, 00-001 Warszawa</li>
-            </ul>
-        </section>
-    </main>
+    <section id="contact" class="section">
+        <h2>Kontakt</h2>
+        <p>Masz pytania lub chcesz umówić się na spotkanie? Skontaktuj się ze mną:</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:ksiegowosc.tomasz.raniszewski@gmail.com">ksiegowosc.tomasz.raniszewski@gmail.com</a></li>
+            <li><strong>Telefon:</strong> +48 512 612 217</li>
+            <li><strong>Adres:</strong> ul. Księgowa 12, 00-001 Warszawa</li>
+        </ul>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Ksiegowość Tomasz Raniszewski</p>
+        <p>&copy; 2024 Księgowość Tomasz Raniszewski</p>
     </footer>
+
+    <script>
+        // Funkcja do wyświetlania odpowiedniej sekcji po kliknięciu w menu
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                section.style.display = 'none'; // Ukryj wszystkie sekcje
+            });
+
+            const sectionToShow = document.getElementById(sectionId);
+            sectionToShow.style.display = 'block'; // Wyświetl klikniętą sekcję
+        }
+
+        // Domyślnie wyświetl sekcję "O firmie"
+        showSection('about');
+    </script>
 </body>
 </html>
