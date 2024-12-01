@@ -1,0 +1,83 @@
+/* Resetowanie domyślnych marginesów i paddingów */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Styl ogólny strony */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Nagłówek */
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  /* Sekcja o firmie */
+  section.about {
+    padding: 40px;
+    text-align: center;
+    background-color: #fff;
+  }
+  
+  section.about h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  section.about p {
+    font-size: 1.2em;
+    color: #666;
+  }
+  
+  /* Sekcja kontaktowa */
+  section.contact {
+    padding: 40px;
+    background-color: #e1e1e1;
+    text-align: center;
+  }
+  
+  section.contact h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  section.contact p {
+    font-size: 1.2em;
+  }
+  
+  /* Przycisk */
+  button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Stopka */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+  
